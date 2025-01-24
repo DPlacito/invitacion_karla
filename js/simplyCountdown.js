@@ -1,9 +1,9 @@
 
 // Set the date to count down to (format: year, month (zero-based), day, hours, minutes, seconds)
-var countDownDate = new Date("2024-04-26T17:30:00").getTime();
+var countDownDate = new Date("2025-03-14T17:30:00").getTime();
 
 // Update the countdown every 1 second
-var countdownFunction = setInterval(function() {
+var countdownFunction = setInterval(function () {
   // Get the current date and time
   var now = new Date().getTime();
 
@@ -15,7 +15,7 @@ var countdownFunction = setInterval(function() {
   var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-  
+
   var hoursText = hours === 1 ? 'Hora' : 'Horas';
   var daysText = days === 1 ? 'Día' : 'Días';
   var minutesText = minutes === 1 ? 'Minuto' : 'Minutos';
